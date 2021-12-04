@@ -1,0 +1,9 @@
+[Unit]
+Description=NXYI2C : Nixie tube clock service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/nxyi2c-python-clock.py
+
+[Install]
+WantedBy=multi-user.target
